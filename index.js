@@ -6,11 +6,7 @@ bot.on("ready", function (){
     console.log(`{bot.user.username} Is Online!`);
 });
 
-bot.login (process.env.token);
-
-client.on('message', message => {
-
-    if(message.content.toLowerCase() === 'links')
-        nodemessage.channel.send('green mi-l suge');
-
-});
+bot.on('message', msg => {
+    if (msg.content === '?links')
+      msg.reply("milsugi")
+  });
