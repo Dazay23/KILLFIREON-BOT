@@ -7,3 +7,14 @@ bot.on("ready", function (){
 
 bot.login(process.env.token);
 
+client.on("message", (message) => {
+    if(message.content === "green") {
+      message.channel.send("milsuge");
+    }
+    if(message.content === "dazay") {
+      message.channel.send("martalog");
+    }
+    if(message.content === "hennessy") {
+      message.channel.send("gasca drequ");
+    }
+  });
