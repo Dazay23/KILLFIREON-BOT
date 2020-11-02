@@ -8,9 +8,9 @@ bot.on("ready", function (){
 
 bot.login (process.env.token);
 
-client.on('message', msg => {
-    if (msg.content === '?links')
-      msg.reply(
-        "green milsuge"
-      )
-  });
+client.on('message', message => {
+
+    if(message.content.toLowerCase() === 'links')
+        nodemessage.channel.send('green mi-l suge');
+
+});
