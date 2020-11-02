@@ -9,4 +9,6 @@ bot.on("ready", function (){
 bot.on('message', msg => {
     if (msg.content === '?links')
       msg.reply("milsugi")
-  });
+});
+
+bot.login('NzcwNDAxNzQzNTY0NzAxNzY2.X5dCiQ.7FGAOimuXD__syAH9PntwaBjlhQ')
